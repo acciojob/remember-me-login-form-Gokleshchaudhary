@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.addEventListener("DOMContentLoaded", function() {
     const loginForm = document.getElementById('loginForm');
     const existingButton = document.getElementById('existing');
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const savedPassword = localStorage.getItem('password');
 
     if (savedUsername) {
-        existingButton.style.display = 'block';
+        existingButton.style.display = 'block'; // Show button if username exists
     }
 
     // Existing user login
